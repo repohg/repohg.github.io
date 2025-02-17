@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .image-column {
+            width: 20%;
+            vertical-align: middle;
+        }
+        .text-column {
+            width: 8%;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <!-- 5 columns on the left side -->
+            <td class="text-column">L1</td>
+            <td class="text-column">L2</td>
+            <td class="text-column">L3</td>
+            <td class="text-column">L4</td>
+            <td class="text-column">L5</td>
+
+            <!-- Image column spanning both rows -->
+            <td class="image-column" rowspan="2">
+                <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+            </td>
+
+            <!-- 5 columns on the right side -->
+            <td class="text-column">R1</td>
+            <td class="text-column">R2</td>
+            <td class="text-column">R3</td>
+            <td class="text-column">R4</td>
+            <td class="text-column">R5</td>
+        </tr>
+        <tr>
+            <!-- Second row for the left side columns -->
+            <td class="text-column">L1</td>
+            <td class="text-column">L2</td>
+            <td class="text-column">L3</td>
+            <td class="text-column">L4</td>
+            <td class="text-column">L5</td>
+
+            <!-- Second row for the right side columns -->
+            <td class="text-column">R1</td>
+            <td class="text-column">R2</td>
+            <td class="text-column">R3</td>
+            <td class="text-column">R4</td>
+            <td class="text-column">R5</td>
+        </tr>
+    </table>
+
+</body>
+</html>
